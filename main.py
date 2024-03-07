@@ -1,12 +1,13 @@
 import phonenumbers
 from phonenumbers import geocoder
 from phonenumbers import carrier
+import opencage
 from opencage.geocoder import OpenCageGeocode
 import folium
 
 num = "+22897830013"
 monNum = phonenumbers.parse(num)
-localisation = geocoder.descriptioon_for_number(monNum, "fr")
+localisation = geocoder.description_for_number(monNum, "fr")
 print(localisation)
 
 operateur = phonenumbers.parse(num)
