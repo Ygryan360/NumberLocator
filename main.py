@@ -5,7 +5,7 @@ import opencage
 from opencage.geocoder import OpenCageGeocode
 import folium
 
-num = "+22897830013"
+num = "+33612345678"  # Remplacez par le numéro de téléphone que vous souhaitez analyser
 monNum = phonenumbers.parse(num)
 localisation = geocoder.description_for_number(monNum, "fr")
 print(localisation)
